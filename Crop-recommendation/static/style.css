@@ -1,0 +1,70 @@
+/* Full background */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+
+    background: url("crop.webp") no-repeat center center/cover;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Form container */
+.login {
+    width: 300px;
+    padding: 30px;
+
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+
+    border-radius: 15px;
+    text-align: center;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Heading */
+.login h1 {
+    margin-bottom: 20px;
+    color: #000;
+}
+
+/* Inputs */
+.login input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-bottom: 4px solid black;
+
+    
+    border-radius: 8px;
+    outline: none;
+
+    background: rgba(255,255,255,0.9);
+}
+
+/* Button */
+.login button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #28a745;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+/* Hover effect */
+.login button:hover {
+    background: #218838;
+}

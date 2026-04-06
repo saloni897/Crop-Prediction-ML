@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crop Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="login">
+        <h1>🌱 Crop Prediction</h1>
+
+        <form action="{{ url_for('predict') }}" method="post">
+            <input type="text" name="Nitrogen" placeholder="Nitrogen" required="required" />
+            <input type="text" name="Phosphorus" placeholder="Phosphorus" required="required" />
+            <input type="text" name="Potassium" placeholder="Potassium" required="required" />
+            <input type="text" name="Temperature" placeholder="Temperature" required="required" />
+            <input type="text" name="Humidity" placeholder="Humidity" required="required" />
+            <input type="text" name="pH" placeholder="pH" required="required" />
+            <input type="text" name="Rainfall" placeholder="Rainfall" required="required" />
+
+            <button type="submit">Predict</button>
+        </form>
+
+        <h2>{{ prediction_text }}</h2>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
